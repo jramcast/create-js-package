@@ -1,3 +1,15 @@
+#### 1.0.4 (2017-11-30)
+
+##### Documentation Changes
+
+* **readme:**
+  * Added npm badge ([bd1e000b](https://github.com/jramcast/create-js-package/commit/bd1e000b206a0dd985e924b39d3c2e0a01fdf145))
+  * Improved readme ([33a13b7f](https://github.com/jramcast/create-js-package/commit/33a13b7fba198ac4731ac75d449408f18fbe0a0d))
+
+##### Other Changes
+
+* **ci:** Added travis deployment ([89bbc5eb](https://github.com/jramcast/create-js-package/commit/89bbc5ebdef061b99c0ed386899ee4acdc0bf632))
+
 #### 1.0.3 (2017-11-30)
 
 ##### Documentation Changes
