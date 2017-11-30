@@ -1,6 +1,10 @@
-# frontend-components-boilerplate
+Create a JS package with es6, testing, linting, and publication tools included. Generated proyects include the following features:
 
-Create a JS package with es6, testing, linting, and publication tools included.
+* Unit testing with mocha, chai and sinon. Test watcher for continous testing.
+* ES6 linting based on [airbnb coding standard](https://www.npmjs.com/package/eslint-config-airbnb).
+* Release scripts and automatic changelog generation based on commit messages, following conventions defined in [generate-changelog](https://www.npmjs.com/package/generate-changelog).
+
+
 
 [![Build Status](https://travis-ci.org/jramcast/create-js-package.svg?branch=master)](https://travis-ci.org/jramcast/create-js-package)
 
