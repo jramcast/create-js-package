@@ -1,7 +1,7 @@
 {
-  "name": "create-js-package",
-  "version": "1.0.1",
-  "description": "Create a JS package with testing, linting, and publication tools included",
+  "name": "PACKAGE-NAME",
+  "version": "1.0.0",
+  "description": "PACKAGE-DESCRIPTION",
   "main": "index.js",
   "scripts": {
     "start": "node src",
@@ -17,36 +17,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jramcast/create-js-package.git"
+    "url": "PACKAGE-REPOSITORY"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jramcast/create-js-package/issues"
-  },
-  "homepage": "https://github.com/jramcast/create-js-package#readme",
-  "keywords": [
-    "package",
-    "generator",
-    "create",
-    "testing",
-    "linting",
-    "publication"
-  ],
+  "license": "",
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^4.12.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "generate-changelog": "^1.6.0",
-    "growl": "^1.10.3",
     "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "sinon": "^4.1.2"
-  },
-  "dependencies": {
-    "fs-extra": "^4.0.2",
-    "yargs": "^10.0.3"
   }
 }
