@@ -1,0 +1,45 @@
+{
+  "name": "create-js-package",
+  "version": "1.0.0",
+  "description": "Create a JS package with testing, linting, and publication tools included",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "start:watch": "nodemon src",
+    "test": "istanbul cover --report text --report lcov _mocha -- --recursive --growl",
+    "test:watch": "mocha  --watch --recursive --growl",
+    "lint": "eslint .",
+    "check-coverage": "istanbul check-coverage --statements 50 --branches 50 --functions 70",
+    "prerelease": "npm run lint && npm test && npm run check-coverage",
+    "release:patch": "npm run prerelease && changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push --follow-tags",
+    "release:minor": "npm run prerelease && changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push --follow-tags",
+    "release:major": "npm run prerelease && changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jramcast/create-js-package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jramcast/create-js-package/issues"
+  },
+  "homepage": "https://github.com/jramcast/create-js-package#readme",
+  "keywords": [
+    "package",
+    "generator",
+    "create",
+    "testing",
+    "linting",
+    "publication"
+  ],
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "sinon": "^4.1.2"
+  }
+}
