@@ -1,3 +1,9 @@
+#### 1.0.6 (2017-11-30)
+
+##### Bug Fixes
+
+* **bin:** Added missing bin config in package.json ([92cd764d](https://github.com/jramcast/create-js-package/commit/92cd764d88cc7533eac75a608c863552e8055a1e))
+
 #### 1.0.5 (2017-11-30)
 
 ##### Other Changes
