@@ -1,3 +1,9 @@
+#### 1.0.5 (2017-11-30)
+
+##### Other Changes
+
+* **ci:** Improved deployments ([292c81d5](https://github.com/jramcast/create-js-package/commit/292c81d54a4c24ffbd8b4428441a7c1a74ec4370))
+
 #### 1.0.4 (2017-11-30)
 
 ##### Documentation Changes
