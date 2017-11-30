@@ -1,4 +1,4 @@
-# Create JS package [![Build Status](https://travis-ci.org/jramcast/create-js-package.svg?branch=master)](https://travis-ci.org/jramcast/create-js-package)
+# Create JS package [![Build Status](https://travis-ci.org/jramcast/create-js-package.svg?branch=master)](https://travis-ci.org/jramcast/create-js-package) [![npm version](https://badge.fury.io/js/create-js-package.svg)](https://badge.fury.io/js/create-js-package)
 Create a JS package with es6, testing, linting, and publication tools included.
 Generated projects include the following features:
 
