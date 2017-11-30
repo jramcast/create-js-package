@@ -1,7 +1,7 @@
 {
   "name": "create-js-package",
   "version": "1.0.1",
-  "description": "Create a JS package with testing, linting, and publication tools included",
+  "description": "Create a JS package with es6, testing, linting, and publication tools included",
   "main": "index.js",
   "scripts": {
     "start": "node src",
