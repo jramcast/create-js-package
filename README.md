@@ -2,8 +2,7 @@
 
 Create a JS package with es6, testing, linting, and publication tools included.
 
-
-[![Build Status](https://travis-ci.org/jramcast/create-js-package.svg?branch=master)](https://travis-ci.org/jramcast/frontend-components-boilerplate)
+[![Build Status](https://travis-ci.org/jramcast/create-js-package.svg?branch=master)](https://travis-ci.org/jramcast/create-js-package)
 
 
 ## Requirements
