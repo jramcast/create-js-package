@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src",
     "start:watch": "nodemon src",
-    "test": "istanbul cover --report text --report lcov _mocha -- --recursive --growl",
+    "test": "istanbul cover --report text --report lcov _mocha -- --recursive",
     "test:watch": "mocha  --watch --recursive --growl",
     "lint": "eslint .",
     "check-coverage": "istanbul check-coverage --statements 50 --branches 50 --functions 70",
