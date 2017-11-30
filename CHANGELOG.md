@@ -1,3 +1,9 @@
+#### 1.0.3 (2017-11-30)
+
+##### Documentation Changes
+
+* **fixes:** Docs improvement ([f189688b](https://github.com/jramcast/create-js-package/commit/f189688bccf07af71228d7ea61c07c32dbfa768d))
+
 #### 1.0.2 (2017-11-30)
 
 ##### Chores
