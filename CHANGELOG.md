@@ -1,3 +1,9 @@
+#### 1.1.3 (2017-12-20)
+
+##### Documentation Changes
+
+* **readme:** Updated readme ([59668a97](https://github.com/jramcast/create-js-package/commit/59668a97a6b2929abecb6e304c03555429391ea9))
+
 #### 1.1.2 (2017-12-20)
 
 ##### Other Changes
