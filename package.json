@@ -13,8 +13,7 @@
     "test:watch": "jest test --watchAll --notify",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "check-coverage": "istanbul check-coverage --statements 50 --branches 50 --functions 70",
-    "prerelease": "npm run lint && npm test && npm run check-coverage",
+    "prerelease": "npm run lint && npm test",
     "release:patch": "npm run prerelease && changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push --follow-tags",
     "release:minor": "npm run prerelease && changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push --follow-tags",
     "release:major": "npm run prerelease && changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push --follow-tags"
