@@ -29,12 +29,15 @@
   },
   "homepage": "https://github.com/jramcast/create-js-package#readme",
   "keywords": [
-    "package",
+    "boilerplate",
     "generator",
     "create",
     "testing",
     "linting",
-    "publication"
+    "publication",
+    "jest",
+    "eslint",
+    "prettier"
   ],
   "devDependencies": {
     "chai": "^4.1.2",
