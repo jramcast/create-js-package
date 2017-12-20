@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node src",
     "start:watch": "nodemon src",
-    "test": "istanbul cover --report text --report lcov _mocha -- --recursive",
-    "test:watch": "mocha  --watch --recursive --growl",
+    "test": "jest test --collectCoverage --ci",
+    "test:watch": "jest test --watchAll --notify",
     "lint": "eslint .",
     "check-coverage": "istanbul check-coverage --statements 50 --branches 50 --functions 70",
     "prerelease": "npm run lint && npm test && npm run check-coverage",
@@ -42,14 +42,27 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "generate-changelog": "^1.6.0",
-    "growl": "^1.10.3",
-    "istanbul": "^0.4.5",
-    "mocha": "^4.0.1",
+    "jest": "^21.2.1",
     "nodemon": "^1.12.1",
     "sinon": "^4.1.2"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
     "yargs": "^10.0.3"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ],
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50
+      }
+    }
   }
 }

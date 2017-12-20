@@ -13,7 +13,7 @@ chai.should();
 
 describe('app: ', () => {
 
-    it('dummy test', () => {
+    test('dummy test', () => {
         const greeting = dummy.sayHello('developer');
         greeting.should.be.eql('Hey developer');
     });

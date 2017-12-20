@@ -29,7 +29,7 @@ describe('create-js-package.run(packageName) ', () => {
         fs.removeSync(tmpDir);
     });
 
-    it('copies package.json scripts from template', () => {
+    test('copies package.json scripts from template', () => {
         creator.run(packageName);
         const originalPath = path.join(__dirname, '../template/package.json');
         const destinationPath = path.join(__dirname, 'tmp/myTestPackage/package.json');
@@ -38,39 +38,39 @@ describe('create-js-package.run(packageName) ', () => {
         original.scripts.should.eql(generated.scripts);
     });
 
-    it('sets package.json name to the specified package name', () => {
+    test('sets package.json name to the specified package name', () => {
         creator.run(packageName);
         const packageJsonPath = path.join(__dirname, 'tmp/myTestPackage/package.json');
         const packageJsonContents = fs.readJsonSync(packageJsonPath);
         packageJsonContents.name.should.eql('myTestPackage');
     });
 
-    it('copies the src example file', () => {
+    test('copies the src example file', () => {
         creator.run(packageName);
         const expectedPath = path.join(__dirname, 'tmp/myTestPackage/src/index.js');
         const result = fs.statSync(expectedPath);
-        result.should.be.an('object');
+        result.size.should.be.greaterThan(0);
     });
 
-    it('copies the example test', () => {
+    test('copies the example test', () => {
         creator.run(packageName);
         const expectedPath = path.join(__dirname, 'tmp/myTestPackage/test/dummyTest.js');
         const result = fs.statSync(expectedPath);
-        result.should.be.an('object');
+        result.size.should.be.greaterThan(0);
     });
 
-    it('copies .eslintrc', () => {
+    test('copies .eslintrc', () => {
         creator.run(packageName);
         const expectedPath = path.join(__dirname, 'tmp/myTestPackage/.eslintrc');
         const result = fs.statSync(expectedPath);
-        result.should.be.an('object');
+        result.size.should.be.greaterThan(0);
     });
 
-    it('copies .eslintignore', () => {
+    test('copies .eslintignore', () => {
         creator.run(packageName);
         const expectedPath = path.join(__dirname, 'tmp/myTestPackage/.eslintignore');
         const result = fs.statSync(expectedPath);
-        result.should.be.an('object');
+        result.size.should.be.greaterThan(0);
     });
 
 });
