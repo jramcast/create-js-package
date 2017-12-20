@@ -87,4 +87,14 @@ describe('create-js-package.run(packageName)', () => {
         const result = fs.statSync(expectedPath);
         result.size.should.be.greaterThan(0);
     });
+
+    test('copies README.md', () => {
+        creator.run(packageName);
+        const expectedPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/README.md'
+        );
+        const result = fs.statSync(expectedPath);
+        result.size.should.be.greaterThan(0);
+    });
 });
