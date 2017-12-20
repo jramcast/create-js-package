@@ -2,10 +2,10 @@
 Create a JS package with es6, testing, linting, and publication tools included.
 Generated projects include the following features:
 
-* Unit testing with mocha, chai and sinon.
+* Unit testing with Jest, chai and sinon.
 * Test watcher for continous testing.
-* Test coverage with istanbul.
-* ES6 linting based on [airbnb coding standard](https://www.npmjs.com/package/eslint-config-airbnb).
+* Test coverage checking.
+* ES6 linting based on eslint and prettier.
 * Release scripts and automatic changelog generation based on commit messages, following conventions defined in [generate-changelog](https://www.npmjs.com/package/generate-changelog).
 
 ## Requirements
