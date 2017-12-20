@@ -6,16 +6,12 @@
 const chai = require('chai');
 const dummy = require('../src/dummy');
 
-
 // Enables the "should" assertion style in chai
 chai.should();
 
-
 describe('app: ', () => {
-
     test('dummy test', () => {
         const greeting = dummy.sayHello('developer');
         greeting.should.be.eql('Hey developer');
     });
-
 });

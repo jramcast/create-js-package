@@ -8,13 +8,10 @@ const path = require('path');
 const chai = require('chai');
 const creator = require('../lib/create-js-package');
 
-
 // Enables the "should" assertion style in chai
 chai.should();
 
-
-describe('create-js-package.run(packageName) ', () => {
-
+describe('create-js-package.run(packageName)', () => {
     let packageName;
     let tmpDir;
 
@@ -32,7 +29,10 @@ describe('create-js-package.run(packageName) ', () => {
     test('copies package.json scripts from template', () => {
         creator.run(packageName);
         const originalPath = path.join(__dirname, '../template/package.json');
-        const destinationPath = path.join(__dirname, 'tmp/myTestPackage/package.json');
+        const destinationPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/package.json'
+        );
         const original = fs.readJsonSync(originalPath);
         const generated = fs.readJsonSync(destinationPath);
         original.scripts.should.eql(generated.scripts);
@@ -40,37 +40,51 @@ describe('create-js-package.run(packageName) ', () => {
 
     test('sets package.json name to the specified package name', () => {
         creator.run(packageName);
-        const packageJsonPath = path.join(__dirname, 'tmp/myTestPackage/package.json');
+        const packageJsonPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/package.json'
+        );
         const packageJsonContents = fs.readJsonSync(packageJsonPath);
         packageJsonContents.name.should.eql('myTestPackage');
     });
 
     test('copies the src example file', () => {
         creator.run(packageName);
-        const expectedPath = path.join(__dirname, 'tmp/myTestPackage/src/index.js');
+        const expectedPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/src/index.js'
+        );
         const result = fs.statSync(expectedPath);
         result.size.should.be.greaterThan(0);
     });
 
     test('copies the example test', () => {
         creator.run(packageName);
-        const expectedPath = path.join(__dirname, 'tmp/myTestPackage/test/dummyTest.js');
+        const expectedPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/test/dummyTest.js'
+        );
         const result = fs.statSync(expectedPath);
         result.size.should.be.greaterThan(0);
     });
 
     test('copies .eslintrc', () => {
         creator.run(packageName);
-        const expectedPath = path.join(__dirname, 'tmp/myTestPackage/.eslintrc');
+        const expectedPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/.eslintrc'
+        );
         const result = fs.statSync(expectedPath);
         result.size.should.be.greaterThan(0);
     });
 
     test('copies .eslintignore', () => {
         creator.run(packageName);
-        const expectedPath = path.join(__dirname, 'tmp/myTestPackage/.eslintignore');
+        const expectedPath = path.join(
+            __dirname,
+            'tmp/myTestPackage/.eslintignore'
+        );
         const result = fs.statSync(expectedPath);
         result.size.should.be.greaterThan(0);
     });
-
 });
