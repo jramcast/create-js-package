@@ -1,3 +1,16 @@
+### 1.1.0 (2017-12-20)
+
+##### Chores
+
+* **scripts:** Remove coverage script. ([c8ba2830](https://github.com/jramcast/create-js-package/commit/c8ba2830edac856e40056cd98d866d76c6522e42))
+* **tools:**
+  * Added prettier combined with eslint ([1bd04c80](https://github.com/jramcast/create-js-package/commit/1bd04c80098bd8f053b8474eaaf47897791b237d))
+  * Switched to Jest as test tool ([b82dcb01](https://github.com/jramcast/create-js-package/commit/b82dcb014d3fec253f81e7963551dfcd9a731605))
+
+##### Documentation Changes
+
+* **readme:** Added readme to generated project ([0620d301](https://github.com/jramcast/create-js-package/commit/0620d301dc46da4a19dc84599a3900350e35d329))
+
 #### 1.0.6 (2017-11-30)
 
 ##### Bug Fixes
