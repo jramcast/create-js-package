@@ -1,3 +1,9 @@
+#### 1.1.2 (2017-12-20)
+
+##### Other Changes
+
+* **package:** Updated package npm keywords ([7bd837b6](https://github.com/jramcast/create-js-package/commit/7bd837b6b52069addd44bc78ccc51645bece576e))
+
 #### 1.1.1 (2017-12-20)
 
 ##### Bug Fixes
