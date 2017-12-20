@@ -10,7 +10,6 @@ install: npm i
 script:
 - npm run lint
 - npm test
-- npm run check-coverage
 deploy:
   provider: npm
   email: "jaime.ram@gmail.com"
