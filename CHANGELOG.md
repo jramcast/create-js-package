@@ -1,3 +1,9 @@
+#### 1.1.1 (2017-12-20)
+
+##### Bug Fixes
+
+* **travis:** Removed coverage script. ([2db54098](https://github.com/jramcast/create-js-package/commit/2db540989157e743ef397b974e4856a4bb0f9ec8))
+
 ### 1.1.0 (2017-12-20)
 
 ##### Chores
