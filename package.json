@@ -1,6 +1,6 @@
 {
   "name": "create-js-package",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Create a JS package with es6, testing, linting, and publication tools included",
   "main": "index.js",
   "bin": {
